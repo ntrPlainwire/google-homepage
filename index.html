@@ -130,17 +130,21 @@
                 }
                 
 
-                
+            
 
     </style>
     </div>
     <div >
-            <ul id="menu" style="float:right ;">
+            <a href="#" style="color: rgba(0, 0, 0, 0.699);">About</a>
+            <a href="#" style="color: rgba(0,0,0,0.699);">Store</a>
+            <div id="menu" style="float:right ;">
+            
             <a class="grey-text "  href="https://github.com/ntrPlainwire/google-homepage" target="_ top">Gmail</a>
             <a class="grey-text "  href="https://github.com/ntrPlainwire/google-homepage" target="_top">Images</a>
-            <a class="black-text "  href="https://github.com/ntrPlainwire/google-homepage" title="Google apps" ><img src="https://github.com/ntrPlainwire/google-homepage/blob/main/images/dot.png" alt="Apps" style="width:20px; height:20px" ></a>
+            <a class="black-text "  href="https://github.com/ntrPlainwire/google-homepage" title="Google apps" ><img src="https://github.com/ntrPlainwire/google-homepage" alt="Apps" style="width:20px; height:20px" ></a>
             <a class="blue-text"  href="https://github.com/ntrPlainwire/google-homepage" role="button" tabindex="0" title="Google Account:" aria-expanded="true"><button type="submit" id="button"  >Sign In</button> </a>
-            </ul><br>
+            <br>
+        </div>
     </div>
 
 
@@ -164,28 +168,7 @@
 
     </div>
     <div>
-        <div >
         <footer>
-            <form class="locbar">
-                <button onclick="getLocation()">Loc</button><p id="demo"></p>
-            <script>
-            var x = document.getElementById("demo");
-
-                function getLocation() {
-            if (navigator.geolocation) {
-               navigator.geolocation.watchPosition(showPosition);
-             } else { 
-             x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-        }
-    
-        function showPosition(position) {
-             x.innerHTML="Latitude: " + position.coords.latitude + 
-            "<br>Longitude: " + position.coords.longitude;
-                }
-        </script>
-                </form>
-          </div><br>
         
                 <div class="navbar">
                     <div class="arrange-left" style="float: left;"> 
