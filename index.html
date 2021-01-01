@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+</head>
+<body>
+
+<div>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .grey-text{
+            color: rgb(75, 65, 65);
+             }
+
+        ul#menu li{
+            display: inline;
+             width:60px;
+            padding: 0, 5px, 0, 5px ;
+            display: flex;
+            text-align: center;
+            align-items: justify;
+           
+            
+            }
+
+        .black-text{
+            color: #000;
+            cursor: pointer;
+            }  
+
+            .blue-text{
+                border-color: rgb(67, 135, 253);
+                cursor:pointer;
+            }
+
+            .OD-text{
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: 32.5%;
+                    margin-top: 10%;
+                    width: 450px;
+                    display:flex;
+                    height: auto;
+                   
+                    
+            }
+            .search-text{
+                
+                position: relative;
+               margin-left: auto;
+               margin-right: auto;
+               width: 40%;
+               display: flex;
+               align-content: center;
+
+            }
+            .go-text{
+                position: relative;
+               margin: 0 auto;
+                width: 25%;
+               align-content: space-around;
+               
+            }
+
+            .navbar {
+                background-color: rgb(230, 225, 225);
+                overflow: hidden;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+             }
+
+                /* Style the links inside the navigation bar */
+            
+            .navbar a {
+                float: inherit;
+                 display: block;
+                 color: #888484;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 14px;
+                 }
+
+                /* Change the color of links on hover */
+             .navbar a:hover {
+                background-color: rgb(211, 211,211);
+                color: rgb(169, 169, 169);
+                transform: translateY(4px);
+                    }
+
+                /* Add a color to the active/current link */
+            .navbar a.active {
+                background-color: #4CAF50;
+                color: rgb(247, 247, 247);
+                }
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+
+            .locbar{      
+                background-color: rgb(230, 225, 225);
+                overflow: hidden;
+                position: fixed;
+                bottom: 49px;
+                width: 100%;
+                padding-top: 8px;
+            }
+
+            #button {
+                background-color: rgb(67, 135, 253);
+                border: rgb(67, 135, 253);
+                color: #ddd;
+                padding: 5px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 10px;
+                }
+                
+
+                
+
+    </style>
+    </div>
+    <div >
+            <ul id="menu" style="float:right ;">
+            <a class="grey-text "  href="https://github.com/ntrPlainwire/google-homepage" target="_ top">Gmail</a>
+            <a class="grey-text "  href="https://github.com/ntrPlainwire/google-homepage" target="_top">Images</a>
+            <a class="black-text "  href="https://github.com/ntrPlainwire/google-homepage" title="Google apps" ><img src="https://github.com/ntrPlainwire/google-homepage/blob/main/images/dot.png" alt="Apps" style="width:20px; height:20px" ></a>
+            <a class="blue-text"  href="https://github.com/ntrPlainwire/google-homepage" role="button" tabindex="0" title="Google Account:" aria-expanded="true"><button type="submit" id="button"  >Sign In</button> </a>
+            </ul><br>
+    </div>
+
+
+            <img class="OD-text" alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" srcset="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 2x" style="padding-top: 50px;" data-atf="1" width="272" height="92" >
+
+    <div style="height:118px" >
+        <form class="search-text" action="/search" style="overflow:visible" data-submitfalse="Questions" method="GET" name="f" role="search"> 
+            <input type="search" placeholder="Search" style="width: 500px; display:bold;">
+            <button type="submit">Go</button> 
+        
+            <br>
+            
+        </form>
+        
+        <br>
+
+        <form class="go-text">
+            <input value="Google Search" aria-label="Google search"  type="submit" style="position: relative;">
+            <input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky"  type="submit" >
+        </form>
+
+    </div>
+    <div>
+        <div >
+        <footer>
+            <form class="locbar">
+                <button onclick="getLocation()">Loc</button><p id="demo"></p>
+            <script>
+            var x = document.getElementById("demo");
+
+                function getLocation() {
+            if (navigator.geolocation) {
+               navigator.geolocation.watchPosition(showPosition);
+             } else { 
+             x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+    
+        function showPosition(position) {
+             x.innerHTML="Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+                }
+        </script>
+                </form>
+          </div><br>
+        
+                <div class="navbar">
+                    <div class="arrange-left" style="float: left;"> 
+                        <a href="https://github.com/ntrPlainwire/google-homepage">Advertising</a>
+                        <a href="https://github.com/ntrPlainwire/google-homepage">Business</a>
+                        <a href="https://github.com/ntrPlainwire/google-homepage">About</a>
+                        <a href="https://github.com/ntrPlainwire/google-homepage">Howsearchworks</a> 
+                    </div> 
+                    <div class="arrange-right" style="float: right;">               
+                        <a href="https://github.com/ntrPlainwire/google-homepage">Privacy</a>
+                        <a href="https://github.com/ntrPlainwire/google-homepage">Terms</a>
+                        <a href="https://github.com/ntrPlainwire/google-homepage">Settings</a>
+                    </div>  
+                </div>
+
+        </footer>
+    </div>
+</body>
+</html>
